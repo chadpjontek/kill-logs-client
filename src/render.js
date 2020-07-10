@@ -5,8 +5,8 @@ const FolderObserver = require('./folderObserver')
 const { dialog } = remote
 
 // globals/defaults
-const apiServerUrl = 'https://classic-kill-api.herokuapp.com'
-// const apiServerUrl = 'http://localhost:3000'
+// const apiServerUrl = 'https://classic-kill-api.herokuapp.com'
+const apiServerUrl = 'http://localhost:3000'
 const logo = document.getElementById('logo')
 const emailInput = document.getElementById('email')
 const passwordInput = document.getElementById('password')
@@ -414,7 +414,8 @@ const createExternalKills = async (kills) => {
         mode: 'cors',
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json; charset=utf-8'
+          'Content-Type': 'application/json; charset=utf-8',
+          'x-auth-token': token
         },
       });
       // Parse body as json
