@@ -5,8 +5,8 @@ const FolderObserver = require('./folderObserver')
 const { dialog } = remote
 
 // globals/defaults
-// const apiServerUrl = 'https://classic-kill-api.herokuapp.com'
-const apiServerUrl = 'http://localhost:3000'
+const apiServerUrl = 'https://classic-kill-api.herokuapp.com'
+// const apiServerUrl = 'http://localhost:3000'
 const logo = document.getElementById('logo')
 const emailInput = document.getElementById('email')
 const passwordInput = document.getElementById('password')
