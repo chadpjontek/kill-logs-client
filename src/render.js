@@ -451,6 +451,6 @@ function sendKills() {
                 killReports.splice(0, killReports.length)
             }
         }
-    }, 1000*6*2.5)
+    }, 1000*60*2.5)
 }
 sendKills()
