@@ -1,5 +1,4 @@
 const { remote, shell } = require('electron')
-// const fetch = require('node-fetch')
 const Tail = require('tail').Tail
 const FolderObserver = require('./folderObserver')
 const { dialog } = remote
